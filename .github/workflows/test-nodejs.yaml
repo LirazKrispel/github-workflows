@@ -40,6 +40,7 @@ jobs:
 
       - name: Install and test
         id: npm-install-test
+        timeout-minutes: 15
         run: |
           aws codeartifact login --tool npm --repository perfectmatch-core --domain talent-fabric
           npm install
