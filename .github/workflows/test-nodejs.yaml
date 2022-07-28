@@ -42,5 +42,5 @@ jobs:
         id: npm-install-test
         run: |
           aws codeartifact login --tool npm --repository perfectmatch-core --domain talent-fabric
-          npm install --loglevel verbose
+          npm install
           npm run test --loglevel verbose
